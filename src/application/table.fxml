@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="533.0" prefWidth="542.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TableSceneController">
+   <children>
+      <Label layoutX="174.0" layoutY="25.0" text="Evolutionary Algorithm">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="72.0" text="Generations: " />
+      <Label layoutX="328.0" layoutY="70.0" text="Population:" />
+      <Label layoutX="23.0" layoutY="115.0" text="Children Production:" />
+      <Label layoutX="328.0" layoutY="115.0" text="Mutation Rate:" />
+      <TextField fx:id="generation" layoutX="168.0" layoutY="67.0" prefHeight="25.0" prefWidth="81.0" />
+      <TextField fx:id="population" layoutX="435.0" layoutY="65.0" prefHeight="25.0" prefWidth="74.0" />
+      <TextField fx:id="children" layoutX="168.0" layoutY="110.0" prefHeight="25.0" prefWidth="81.0" />
+      <TextField fx:id="mutation" layoutX="435.0" layoutY="110.0" prefHeight="25.0" prefWidth="74.0" />
+      <TableView fx:id="evoTable" layoutX="18.0" layoutY="207.0" prefHeight="252.0" prefWidth="496.0">
+        <columns>
+          <TableColumn fx:id="generationColumn" prefWidth="90.0" text="Generation" />
+          <TableColumn fx:id="aColumn" prefWidth="71.0" text="Gene A" />
+            <TableColumn fx:id="bColumn" prefWidth="76.0" text="Gene B" />
+            <TableColumn fx:id="cColumn" prefWidth="78.0" text="Gene C" />
+            <TableColumn fx:id="dColumn" prefWidth="70.0" text="Gene D" />
+            <TableColumn fx:id="fitnessColumn" prefWidth="108.0" text="Fitness" />
+        </columns>
+      </TableView>
+      <Button fx:id="runButton" layoutX="250.0" layoutY="158.0" mnemonicParsing="false" onAction="#runButton" text="Run" />
+      <Button fx:id="graph" layoutX="193.0" layoutY="483.0" mnemonicParsing="false" onAction="#graph" text="Graph" />
+      <Button fx:id="closeBtn" layoutX="285.0" layoutY="483.0" mnemonicParsing="false" onAction="#closeBtn" text="Close" />
+   </children>
+</AnchorPane>

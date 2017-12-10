@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="514.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GraphSceneController">
+   <children>
+      <LineChart fx:id="lineChart" layoutX="15.0" layoutY="71.0" prefHeight="400.0" prefWidth="466.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Label layoutX="147.0" layoutY="33.0" text="Graphical Representation">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="close" layoutX="225.0" layoutY="471.0" mnemonicParsing="false" onAction="#close" text="Close" />
+   </children>
+</AnchorPane>
